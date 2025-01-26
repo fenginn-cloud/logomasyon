@@ -6,43 +6,45 @@
     <title>Anasayfa - Logomasyon</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            background-color: #fff;
-        }
+        /* Navbar düzeni */
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
-            border-bottom: 1px solid #ddd;
+            padding: 1rem;
         }
+
         nav a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
             margin: 0 1rem;
-            font-size: 0.9rem;
         }
-        nav a:hover {
-            color: #000;
+
+        @media (max-width: 768px) { /* Mobil ekranlar için */
+            nav {
+                flex-wrap: wrap; /* Menü taşarsa yeni satıra geçsin */
+                justify-content: center; /* Menü ortalansın */
+            }
+            nav a {
+                margin: 0.5rem; /* Linkler arasında daha küçük boşluk bırak */
+                font-size: 0.9rem; /* Daha küçük font boyutu */
+            }
         }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #333;
-        }
+
+        /* Hakkımızda kısmı */
         .about {
             text-align: center;
             padding: 5rem 2rem;
             background-color: #f8f9fa;
         }
+
         .about h1 {
             font-size: 2.5rem;
             font-weight: bold;
             margin-bottom: 1rem;
         }
+
         .about p {
             font-size: 1rem;
             color: #555;
@@ -50,21 +52,26 @@
             margin: 0 auto;
             line-height: 1.6;
         }
+
+        /* Hizmetler kısmı */
         .services {
             padding: 4rem 2rem;
             background-color: #fff;
         }
+
         .services h2 {
             text-align: center;
             margin-bottom: 2rem;
             font-size: 2rem;
             color: #333;
         }
+
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
+
         .card {
             background-color: #f8f9fa;
             border: 1px solid #ddd;
@@ -73,18 +80,22 @@
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
         }
+
         .card:hover {
             transform: scale(1.05);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
+
         .card h3 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
         }
+
         .card p {
             font-size: 0.9rem;
             color: #555;
         }
+
         .card a {
             text-decoration: none;
             padding: 0.5rem 1rem;
@@ -95,9 +106,12 @@
             display: inline-block;
             margin-top: 1rem;
         }
+
         .card a:hover {
             background-color: #555;
         }
+
+        /* Footer */
         .footer {
             margin-top: 5rem;
             padding: 2rem 2rem;
@@ -105,35 +119,43 @@
             text-align: center;
             border-top: 1px solid #ddd;
         }
+
         .footer p {
             margin: 0.5rem 0;
             font-size: 0.9rem;
             color: #555;
         }
+
         .footer a {
             color: #333;
             text-decoration: none;
             font-size: 0.9rem;
         }
+
         .footer a:hover {
             text-decoration: underline;
         }
+
         .footer .social {
             margin: 1rem 0;
         }
+
         .footer .social a {
             margin: 0 0.5rem;
             font-size: 1.2rem;
         }
+
         .footer .newsletter {
             margin: 2rem 0;
         }
+
         .footer .newsletter input {
             padding: 0.7rem;
             border: 1px solid #ddd;
             border-radius: 4px;
             margin-right: 0.5rem;
         }
+
         .footer .newsletter button {
             padding: 0.7rem 1.5rem;
             border: none;
@@ -142,12 +164,14 @@
             border-radius: 4px;
             font-size: 0.9rem;
         }
+
         .footer .newsletter button:hover {
             background-color: #555;
         }
     </style>
 </head>
 <body>
+    <!-- Navbar -->
     <nav>
         <div class="logo">Logomasyon</div>
         <div>
@@ -157,11 +181,13 @@
         </div>
     </nav>
 
+    <!-- Hakkımızda Bölümü -->
     <section class="about">
         <h1>Biz Kimiz?</h1>
         <p>Logomasyon, markanızın değerini artırmak ve ihtiyaçlarınıza yaratıcı çözümler sunmak için çalışan bir tasarım stüdyosudur. Profesyonel ekibimiz, yenilikçi fikirler ve modern tasarımlar ile fark yaratır. Hedefimiz, sizi rakiplerinizden bir adım öne taşıyan özgün ve etkileyici projeler geliştirmektir.</p>
     </section>
 
+    <!-- Hizmetler Bölümü -->
     <section class="services">
         <h2>Hizmetlerimiz</h2>
         <div class="grid">
@@ -198,6 +224,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer" id="footer">
         <p><strong>İletişim Bilgilerimiz</strong></p>
         <p>
