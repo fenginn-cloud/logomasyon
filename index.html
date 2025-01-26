@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anasayfa - Logomasyon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #fff;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #ddd;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin: 0 1rem;
+            font-size: 0.9rem;
+        }
+        nav a:hover {
+            color: #000;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .about {
+            text-align: center;
+            padding: 5rem 2rem;
+            background-color: #f8f9fa;
+        }
+        .about h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .about p {
+            font-size: 1rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .services {
+            padding: 4rem 2rem;
+            background-color: #fff;
+        }
+        .services h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #333;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .card a {
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        .card a:hover {
+            background-color: #555;
+        }
+        .footer {
+            margin-top: 5rem;
+            padding: 2rem 2rem;
+            background-color: #f8f9fa;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+        .footer p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .footer a {
+            color: #333;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social {
+            margin: 1rem 0;
+        }
+        .footer .social a {
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+        }
+        .footer .newsletter {
+            margin: 2rem 0;
+        }
+        .footer .newsletter input {
+            padding: 0.7rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+        }
+        .footer .newsletter button {
+            padding: 0.7rem 1.5rem;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .footer .newsletter button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Logomasyon</div>
+        <div>
+            <a href="#">Anasayfa</a>
+            <a href="#">Projeler</a>
+            <a href="#footer">İletişim</a>
+        </div>
+    </nav>
+
+    <section class="about">
+        <h1>Biz Kimiz?</h1>
+        <p>Logomasyon, markanızın değerini artırmak ve ihtiyaçlarınıza yaratıcı çözümler sunmak için çalışan bir tasarım stüdyosudur. Profesyonel ekibimiz, yenilikçi fikirler ve modern tasarımlar ile fark yaratır. Hedefimiz, sizi rakiplerinizden bir adım öne taşıyan özgün ve etkileyici projeler geliştirmektir.</p>
+    </section>
+
+    <section class="services">
+        <h2>Hizmetlerimiz</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Logo Tasarımı</h3>
+                <p>Yaratıcı ve özgün logo tasarımlarımız ile markanızı güçlendirin.</p>
+                <a href="https://wa.me/905334606154?text=Merhaba,%20Logo%20Tasarımı%20hakkında%20bilgi%20almak%20istiyorum" target="_blank">Bilgi Al</a>
+            </div>
+            <div class="card">
+                <h3>A+ Marka Tasarımı</h3>
+                <p>Markanızı fiziksel ve dijital dünyada güçlü bir kimlikle temsil edin.</p>
+                <a href="https://wa.me/905334606154?text=Merhaba,%20A+%20Marka%20Tasarımı%20hakkında%20bilgi%20almak%20istiyorum" target="_blank">Bilgi Al</a>
+            </div>
+            <div class="card">
+                <h3>Kurumsal Kimlik</h3>
+                <p>Markanıza değer katacak eksiksiz kurumsal kimlik çözümleri sunuyoruz.</p>
+                <a href="https://wa.me/905334606154?text=Merhaba,%20Kurumsal%20Kimlik%20hakkında%20bilgi%20almak%20istiyorum" target="_blank">Bilgi Al</a>
+            </div>
+            <div class="card">
+                <h3>Animasyon ve Tanıtım Filmi</h3>
+                <p>Markanız için dikkat çekici animasyon ve tanıtım filmleri hazırlıyoruz.</p>
+                <a href="https://wa.me/905334606154?text=Merhaba,%20Animasyon%20ve%20Tanıtım%20Filmi%20hakkında%20bilgi%20almak%20istiyorum" target="_blank">Bilgi Al</a>
+            </div>
+            <div class="card">
+                <h3>Özel İstek Tasarımlar</h3>
+                <p>Tasarım ihtiyaçlarınıza uygun yaratıcı çözümler üretiyoruz.</p>
+                <a href="https://wa.me/905334606154?text=Merhaba,%20%C3%96zel%20%C4%B0stek%20Tasar%C4%B1mlar%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum" target="_blank">Bilgi Al</a>
+            </div>
+            <div class="card">
+                <h3>Logo Animasyonu</h3>
+                <p>Logonuzu etkileyici animasyonlarla hareketlendirin.</p>
+                <a href="https://wa.me/905334606154?text=Merhaba,%20Logo%20Animasyonu%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum" target="_blank">Bilgi Al</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <p><strong>İletişim Bilgilerimiz</strong></p>
+        <p>
+            <a href="https://www.instagram.com/logomasyon" target="_blank">Instagram: @logomasyon</a><br>
+            <a href="https://goo.gl/maps/8ZVNkCJoYyR2" target="_blank">Adres: Kurtköy Yavuz Selim Mahallesi No: 1 Kat: 2 Sapanca/Sakarya</a><br>
+            <a href="tel:+905334606154">Telefon: 0533 460 61 54</a>
+        </p>
+        <div class="social">
+            <a href="https://www.instagram.com/logomasyon" target="_blank">📷</a>
+            <a href="tel:+905334606154">📞</a>
+        </div>
+        <div class="newsletter">
+            <form>
+                <input type="email" placeholder="E-posta adresiniz">
+                <button type="submit">Abone Ol</button>
+            </form>
+        </div>
+        <p>© 2022 Logomasyon. Tüm Hakları Saklıdır.</p>
+    </footer>
+</body>
+</html>
